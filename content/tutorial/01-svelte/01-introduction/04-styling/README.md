@@ -1,8 +1,8 @@
 ---
-title: Styling
+title: 스타일
 ---
 
-Just like in HTML, you can add a `<style>` tag to your component. Let's add some styles to the `<p>` element:
+스타일을 적용하는 것은 매우 쉽습니다! 스벨트 컴포넌트에서는 `<style>` 태그를 넣는 것만으로 스타일 적용이 가능합니다. 한번 `<p>` 태그에 스타일을 적용시켜 볼까요?
 
 ```svelte
 <p>This is a paragraph.</p>
@@ -16,4 +16,4 @@ Just like in HTML, you can add a `<style>` tag to your component. Let's add some
 </style>
 ```
 
-Importantly, these rules are _scoped to the component_. You won't accidentally change the style of `<p>` elements elsewhere in your app, as we'll see in the next step.
+주목해야 할 것은, 스타일이 컴포넌트 단위로 적용된다는 것입니다. 이 컴포넌트에서 `<p>` 태그의 스타일을 변경했다 하더라도, 다른 컴포넌트의 스타일은 변경되지 않습니다. 스타일을 모든 곳에 적용시키고 싶다고요? 바로 다음 단원에서 이에 대해 다룰 겁니다!

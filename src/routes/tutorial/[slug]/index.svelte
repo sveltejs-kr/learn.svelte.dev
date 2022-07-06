@@ -381,9 +381,9 @@
 								}}
 							>
 								{#if completed && Object.keys(section.b).length > 0}
-									reset
+									리셋
 								{:else}
-									solve <Icon name="arrow-right" />
+									힌트 <Icon name="arrow-right" />
 								{/if}
 							</button>
 						</section>

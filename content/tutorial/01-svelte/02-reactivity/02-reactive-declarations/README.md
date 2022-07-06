@@ -1,5 +1,5 @@
 ---
-title: Declarations
+title: 선언
 ---
 
 Svelte automatically updates the DOM when your component's state changes. Often, some parts of a component's state need to be computed from _other_ parts (such as a `fullname` derived from a `firstname` and a `lastname`), and recomputed whenever they change.

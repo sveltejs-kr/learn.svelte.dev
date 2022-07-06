@@ -1,5 +1,5 @@
 ---
-title: Dynamic attributes
+title: 동적 속성
 ---
 
 Just like you can use curly braces to control text, you can use them to control element attributes.

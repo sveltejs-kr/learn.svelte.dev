@@ -30,7 +30,7 @@
 					...chapter,
 					label: String.fromCharCode(97 + i),
 					first: chapter.sections[0].slug,
-					sections: chapter.sections.filter((section) => regex.test(section.title))
+					sections: chapter.sections
 				}))
 				.filter((chapter) => chapter.sections.length > 0 || regex.test(chapter.title));
 

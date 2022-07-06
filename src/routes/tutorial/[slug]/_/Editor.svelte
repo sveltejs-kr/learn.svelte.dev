@@ -19,7 +19,7 @@
 
 		if (dev && !/chrome/i.test(navigator.userAgent)) {
 			container.innerHTML =
-				'<p style="text-align: center; width: 20em; max-width: calc(100% - 4rem)">The code editor requires Chrome during development, as it uses module workers</p>';
+				'<p style="text-align: center; width: 30em; max-width: calc(100% - 4rem)">코드를 직접 수정해보려면 크로뮴 기반 브라우저를 이용해야 해요.</p>';
 			return;
 		}
 

@@ -29,7 +29,7 @@
 
 <Nav {page} logo="/svelte-logo.svg">
 	<svelte:fragment slot="nav-center">
-		<strong class="large">Work in progress. Here be dragons!</strong>
+		<strong class="large">스벨트 튜토리얼 - 베타!</strong>
 		<!-- <NavItem href="/tutorial">Tutorial</NavItem>
 		<NavItem href="/docs">Docs</NavItem>
 		<NavItem href="/examples">Examples</NavItem>

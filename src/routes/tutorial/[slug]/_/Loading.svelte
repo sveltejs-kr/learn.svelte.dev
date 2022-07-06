@@ -8,14 +8,14 @@
 	/** @param {Error} error */
 	function get_error_message(error) {
 		if (/safari/i.test(navigator.userAgent) && !/chrome/i.test(navigator.userAgent)) {
-			return '<p>This app requires modern web platform features. Please use a browser other than Safari.</p>';
+			return '<p>사파리에서는 예제를 실행해볼 수 없어요. 크롬을 이용해보는 것은 어떨까요?</p>';
 		}
 
 		if (/firefox/i.test(navigator.userAgent)) {
-			return `<p>Failed to start WebContainer. You may need to enable third party cookies and disable Enhanced Tracking Protection.</p><small>Error message: ${error.message}</small>`;
+			return `<p>예제를 보이는 데 실패했어요. 서드파티 쿠키를 허용하고 Enhanced Tracking Protection를 비활성화하면 이 문제가 해결될 수도 있어요.</p><small>Error message: ${error.message}</small>`;
 		}
 
-		return `<p>Failed to start WebContainer. You may need to enable third party cookies.</p><small>Error message: ${error.message}</small>`;
+		return `<p>예제를 보이는 데 실패했어요. 서드파티 쿠키를 허용하면 이 문제가 해결될 수도 있어요.</p><small>Error message: ${error.message}</small>`;
 	}
 </script>
 
@@ -24,7 +24,7 @@
 		{@html get_error_message(error)}
 	{:else}
 		{#if initial}
-			<p>initializing... this may take a few seconds</p>
+			<p>로딩 중... 잠시만 기다려 주세요..</p>
 		{/if}
 
 		<svg width="107" height="128" viewBox="0 0 107 128">

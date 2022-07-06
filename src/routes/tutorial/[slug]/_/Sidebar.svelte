@@ -67,24 +67,23 @@
 	</div>
 
 	{#if section.next}
-		<p><a href="/tutorial/{section.next.slug}">Next: {section.next.title}</a></p>
+		<p><a href="/tutorial/{section.next.slug}">다음 챕터: {section.next.title}</a></p>
 	{/if}
 </div>
 
 <footer>
 	<a class="edit" href="https://github.com/sveltejs/learn.svelte.dev/tree/main/{section.dir}">
-		Edit this page
+		이 페이지 수정하기
 	</a>
 </footer>
 
 {#if show_modal}
 	<Modal on:close={() => (show_modal = false)}>
 		<div class="modal-contents">
-			<h2>Copy and paste is currently disabled!</h2>
+			<h2>복사/붙혀넣기가 비활성화 됐어요!</h2>
 
 			<p>
-				We recommend typing the code into the editor to complete the exercise, as this results in
-				better retention and understanding.
+				코드를 직접 치는 것이 실력 향상에 도움이 됩니다.
 			</p>
 			<label>
 				<input
@@ -93,7 +92,7 @@
 						sessionStorage[copy_enabled] = e.currentTarget.checked ? 'true' : '';
 					}}
 				/>
-				enable copy-and-paste for the duration of this session
+				잠시 동안 복사/붙혀넣기 사용하기
 			</label>
 
 			<button on:click={() => (show_modal = false)}>OK</button>

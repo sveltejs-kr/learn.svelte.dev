@@ -1,15 +1,15 @@
 ---
-title: HTML tags
+title: HTML 태그
 ---
 
-Ordinarily, strings are inserted as plain text, meaning that characters like `<` and `>` have no special meaning.
+일반적으로, 문자열은 문자열 그대로 렌더링됩니다. HTML 태그는 완전히 무시되고 안전한 문자열만이 출력되죠.
 
-But sometimes you need to render HTML directly into a component. For example, the words you're reading right now exist in a markdown file that gets included on this page as a blob of HTML.
+하지만, 가끔씩 HTML 문자열을 직접적으로 렌더링 하는 것이 필요할 수 있을 겁니다. 예를 들어, 여러분이 지금 보고 있는 문서의 내용 같은 경우도 마크다운의 내용을 HTML 문자열로 렌더링 해야 할 것입니다.
 
-In Svelte, you do this with the special `{@html ...}` tag:
+스벨트에서는 `{@html ...}` 태그를 사용하여 이 작업을 할 수 있습니다:
 
 ```svelte
 <p>{+++@html+++ string}</p>
 ```
 
-> Svelte doesn't perform any sanitization of the expression inside `{@html ...}` before it gets inserted into the DOM. In other words, if you use this feature it's critical that you manually escape HTML that comes from sources you don't trust, otherwise you risk exposing your users to XSS attacks.
+> 스벨트는 `{@html ...}` 태그 안의 내용을 **주어진 그대로** 렌더링합니다. 다시 말해, 신뢰할 수 없는 내용을 이 태그 안에 넣는 것은 XSS 공격을 허용하는 매우 심각한 보안 취약점이 될 수 있습니다. 
